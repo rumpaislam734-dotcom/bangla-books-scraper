@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<!-- saved from url=(0047)http://127.0.0.1:5500/.vscode/react/index.html? -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Rumpa - Profile</title>
+</head>
+
+<body>
+
+    <h1>Rumpa Islam</h1>
+    <p>Computer Science Student</p>
+    <hr>
+
+    <h2>My Photo</h2>
+    <img src="./photo_files/photo.jpg" alt="Rumpa" width="200">
+    <hr>
+
+    <h2>About Me</h2>
+    <p>Hello! I am Rumpa Islam, a Computer Science student interested in technology and web development.</p>
+    <p>I enjoy learning programming and creating websites.</p>
+    <hr>
+
+    <h2>My Skills</h2>
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>Python</li>
+        <li>C++</li>
+    </ul>
+    <hr>
+
+    <h2>Education</h2>
+    <table border="1">
+        <tbody><tr>
+            <th>Degree</th>
+            <th>Subject</th>
+            <th>Status</th>
+        </tr>
+        <tr>
+            <td>University</td>
+            <td>Computer Science</td>
+            <td>Studying</td>
+        </tr>
+        <tr>
+            <td>HSC</td>
+            <td>Science</td>
+            <td>Completed</td>
+        </tr>
+    </tbody></table>
+    <hr>
+
+    <h2>Contact Me</h2>
+    <form>
+        Name: <input type="text"><br><br>
+        Email: <input type="email"><br><br>
+        Message:<br>
+        <textarea rows="4"></textarea><br><br>
+        <input type="submit" value="Send">
+    </form>
+
+    <hr>
+
+    <p>
+        © 2026 Rumpa Islam |
+        <a href="https://github.com/" target="_blank">GitHub</a>
+    </p>
+
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
